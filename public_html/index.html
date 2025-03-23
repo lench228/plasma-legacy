@@ -1,0 +1,1399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Надежное покрытие будущего - сегодня</title>
+    <meta
+            name="description"
+            content="Мы увеличим срок эксплуатации оборудования и снизим денежные затраты на его ремонт Тел. +7 (992) 014-38-77"
+    />
+    <link rel="icon" href="assets/lmao.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="assets/styles/header.css" />
+    <link rel="stylesheet" href="assets/styles/hero.css" />
+    <link rel="stylesheet" href="assets/styles/about.css" />
+    <link rel="stylesheet" href="assets/styles/methods.css" />
+    <link rel="stylesheet" href="assets/styles/contacts.css" />
+    <link rel="stylesheet" href="assets/styles/footer.css" />
+    <link rel="stylesheet" href="assets/styles/videos.css" />
+    <link rel="stylesheet" href="assets/styles/companies.css" />
+    <link rel="stylesheet" href="assets/styles/reset.css" />
+    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <link rel="stylesheet" href="assets/styles/price.css" />
+    <link rel="stylesheet" href="assets/styles/examples.css" />
+    <link rel="stylesheet" href="assets/styles/description.css" />
+    <link rel="stylesheet" href="assets/styles/services.css" />
+    <link rel="stylesheet" href="assets/styles/modals.css" />
+    <link rel="stylesheet" href="assets/styles/card.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200..800&display=swap"
+            rel="stylesheet"
+    />
+    <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@200..800&display=swap"
+            rel="stylesheet"
+    />
+</head>
+<body>
+<div
+        class="modal-overlay"
+        style="display: none"
+        id="modal-overlay"
+></div>
+<div class="notification" id="notification">
+    Заявка отправлена!
+</div>
+<div class="sidebar" id="sidebar">
+    <button class="sidebar-close-button" onclick="toggleSidebar()">
+        <img loading="lazy" src="assets/close.svg" alt="close" />
+    </button>
+    <ul>
+        <li class="navigation-menu__item">
+            <a
+                    class="navigation-menu__item-link"
+                    href="#about"
+                    onclick="toggleSidebar()"
+            >О нас</a
+            >
+        </li>
+        <li class="navigation-menu__item">
+            <a
+                    class="navigation-menu__item-link"
+                    href="#services"
+                    onclick="toggleSidebar()"
+            >Услуги</a
+            >
+        </li>
+        <li class="navigation-menu__item">
+            <a
+                    class="navigation-menu__item-link"
+                    href="#examples"
+                    onclick="toggleSidebar()"
+            >Примеры</a
+            >
+        </li>
+        <li class="navigation-menu__item">
+            <a
+                    class="navigation-menu__item-link"
+                    href="#contacts"
+                    onclick="toggleSidebar()"
+            >Контакты</a
+            >
+        </li>
+    </ul>
+</div>
+<div class="modal-wear-resistant" id="modal-wear-resistant">
+    <div class="modal-content">
+        <img loading="lazy"
+             src="assets/spray type card.png"
+             alt="Example"
+             class="modal-image"
+        />
+        <div class="modal-right">
+            <div class="modal-right__content">
+                <h1 class="modal-title">Износостойкое покрытие</h1>
+                <p class="modal-text">
+                    Жаростойкое покрытие представляет собой специальный
+                    материал, который способен выдерживать высокие
+                    температуры без потери своих свойств. Оно
+                    используется в различных отраслях, включая
+                    строительство и автомобилестроение, обеспечивая
+                    защиту от огня и тепла. Такие покрытия могут быть
+                    как на основе органических, так и неорганических
+                    веществ, и их выбор зависит от конкретных условий
+                    эксплуатации.
+                </p>
+                <div>
+                    <span class="list-title">Типы износа</span>
+                    <ul class="modal-list">
+                        <li>Тип 1</li>
+                        <li>Тип 2</li>
+                        <li>Тип 3</li>
+                    </ul>
+                </div>
+            </div>
+            <button class="submit-btn">Оставить заявку</button>
+            <button class="modal-close-btn" onclick="closeModal()">
+                Закрыть
+            </button>
+        </div>
+    </div>
+</div>
+<div class="modal-thermal-barrier" id="modal-thermal-barrier">
+    <div class="modal-content">
+        <img loading="lazy"
+             src="assets/spray type card.png"
+             alt="Example"
+             class="modal-image"
+        />
+        <div class="modal-right">
+            <div class="modal-right__content">
+                <h1 class="modal-title">Термобарьерное покрытие</h1>
+                <p class="modal-text">
+                    Жаростойкое покрытие представляет собой специальный
+                    материал, который способен выдерживать высокие
+                    температуры без потери своих свойств. Оно
+                    используется в различных отраслях, включая
+                    строительство и автомобилестроение, обеспечивая
+                    защиту от огня и тепла. Такие покрытия могут быть
+                    как на основе органических, так и неорганических
+                    веществ, и их выбор зависит от конкретных условий
+                    эксплуатации.
+                </p>
+                <div>
+                    <span class="list-title">Типы износа</span>
+                    <ul class="modal-list">
+                        <li>Тип 1</li>
+                        <li>Тип 2</li>
+                        <li>Тип 3</li>
+                    </ul>
+                </div>
+            </div>
+            <button class="submit-btn">Оставить заявку</button>
+            <button class="modal-close-btn" onclick="closeModal()">
+                Закрыть
+            </button>
+        </div>
+    </div>
+</div>
+<div class="modal-antifriction" id="modal-antifriction">
+    <div class="modal-content">
+        <img loading="lazy"
+             src="assets/spray type card.png"
+             alt="Example"
+             class="modal-image"
+        />
+        <div class="modal-right">
+            <div class="modal-right__content">
+                <h1 class="modal-title">Антифрикционное покрытие</h1>
+                <p class="modal-text">
+                    Жаростойкое покрытие представляет собой специальный
+                    материал, который способен выдерживать высокие
+                    температуры без потери своих свойств. Оно
+                    используется в различных отраслях, включая
+                    строительство и автомобилестроение, обеспечивая
+                    защиту от огня и тепла. Такие покрытия могут быть
+                    как на основе органических, так и неорганических
+                    веществ, и их выбор зависит от конкретных условий
+                    эксплуатации.
+                </p>
+                <div>
+                    <span class="list-title">Типы износа</span>
+                    <ul class="modal-list">
+                        <li>Тип 1</li>
+                        <li>Тип 2</li>
+                        <li>Тип 3</li>
+                    </ul>
+                </div>
+            </div>
+            <button class="submit-btn">Оставить заявку</button>
+            <button class="modal-close-btn" onclick="closeModal()">
+                Закрыть
+            </button>
+        </div>
+    </div>
+</div>
+<div class="modal-heat-resistant" id="modal-heat-resistant">
+    <div class="modal-content">
+        <img loading="lazy"
+             src="assets/spray type card.png"
+             alt="Example"
+             class="modal-image"
+        />
+        <div class="modal-right">
+            <div class="modal-right__content">
+                <h1 class="modal-title">Жаростойкое покрытие</h1>
+                <p class="modal-text">
+                    Жаростойкое покрытие представляет собой специальный
+                    материал, который способен выдерживать высокие
+                    температуры без потери своих свойств. Оно
+                    используется в различных отраслях, включая
+                    строительство и автомобилестроение, обеспечивая
+                    защиту от огня и тепла. Такие покрытия могут быть
+                    как на основе органических, так и неорганических
+                    веществ, и их выбор зависит от конкретных условий
+                    эксплуатации.
+                </p>
+                <div>
+                    <span class="list-title">Типы износа</span>
+                    <ul class="modal-list">
+                        <li>Тип 1</li>
+                        <li>Тип 2</li>
+                        <li>Тип 3</li>
+                    </ul>
+                </div>
+            </div>
+            <button class="submit-btn">Оставить заявку</button>
+            <button class="modal-close-btn" onclick="closeModal()">
+                Закрыть
+            </button>
+        </div>
+    </div>
+</div>
+<div class="modal-corrosion-resistant" id="modal-corrosion-resistant">
+    <div class="modal-content">
+        <img loading="lazy"
+             src="assets/spray type card.png"
+             alt="Example"
+             class="modal-image"
+        />
+        <div class="modal-right">
+            <div class="modal-right__content">
+                <h1 class="modal-title">Коррозионностойкое покрытие</h1>
+                <p class="modal-text">
+                    Жаростойкое покрытие представляет собой специальный
+                    материал, который способен выдерживать высокие
+                    температуры без потери своих свойств. Оно
+                    используется в различных отраслях, включая
+                    строительство и автомобилестроение, обеспечивая
+                    защиту от огня и тепла. Такие покрытия могут быть
+                    как на основе органических, так и неорганических
+                    веществ, и их выбор зависит от конкретных условий
+                    эксплуатации.
+                </p>
+                <div>
+                    <span class="list-title">Типы износа</span>
+                    <ul class="modal-list">
+                        <li>Тип 1</li>
+                        <li>Тип 2</li>
+                        <li>Тип 3</li>
+                    </ul>
+                </div>
+            </div>
+            <button class="submit-btn">Оставить заявку</button>
+            <button class="modal-close-btn" onclick="closeModal()">
+                Закрыть
+            </button>
+        </div>
+    </div>
+</div>
+<div
+        class="modal-electrically-conductive"
+        id="modal-electrically-conductive"
+>
+    <div class="modal-content">
+        <img loading="lazy"
+             src="assets/spray type card.png"
+             alt="Example"
+             class="modal-image"
+        />
+        <div class="modal-right">
+            <div class="modal-right__content">
+                <h1 class="modal-title">Электропроводящее покрытие</h1>
+                <p class="modal-text">
+                    Жаростойкое покрытие представляет собой специальный
+                    материал, который способен выдерживать высокие
+                    температуры без потери своих свойств. Оно
+                    используется в различных отраслях, включая
+                    строительство и автомобилестроение, обеспечивая
+                    защиту от огня и тепла. Такие покрытия могут быть
+                    как на основе органических, так и неорганических
+                    веществ, и их выбор зависит от конкретных условий
+                    эксплуатации.
+                </p>
+                <div>
+                    <span class="list-title">Типы износа</span>
+                    <ul class="modal-list">
+                        <li>Тип 1</li>
+                        <li>Тип 2</li>
+                        <li>Тип 3</li>
+                    </ul>
+                </div>
+            </div>
+            <button class="submit-btn">Оставить заявку</button>
+            <button class="modal-close-btn" onclick="closeModal()">
+                Закрыть
+            </button>
+        </div>
+    </div>
+</div>
+<header class="main-header">
+    <nav class="navigation">
+        <div class="navigation-logo-container">
+            <img loading="lazy"
+                 src="assets/plasma dynamics logo.png"
+                 alt="logo"
+                 class="navigation-logo"
+                 id="header-logo"
+            />
+        </div>
+
+        <ul class="navigation-menu">
+            <li class="navigation-menu__item">
+                <a class="navigation-menu__item-link" href="#about"
+                >О нас</a
+                >
+            </li>
+            <li class="navigation-menu__item">
+                <a class="navigation-menu__item-link" href="#services"
+                >Услуги</a
+                >
+            </li>
+            <li class="navigation-menu__item">
+                <a class="navigation-menu__item-link" href="#examples"
+                >Примеры</a
+                >
+            </li>
+            <li class="navigation-menu__item">
+                <a class="navigation-menu__item-link" href="#contacts"
+                >Контакты</a
+                >
+            </li>
+        </ul>
+        <div class="navigation-button-container">
+            <button class="navigation-button" id="header-button">
+                        <span class="navigation-button__text"
+                        >Оставить заявку</span
+                        >
+            </button>
+        </div>
+        <button
+                class="navigation-menu__burger-button"
+                onclick="toggleSidebar()"
+        >
+            <img loading="lazy"
+                 src="assets/menu.svg"
+                 alt="menu burger"
+                 class="navigation-menu__burger"
+            />
+        </button>
+    </nav>
+</header>
+<main class="main" id="main">
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-card">
+                <div class="hero-row">
+                    <div class="info-zone">
+                        <div class="city-button">
+                                    <span class="city-button_text">
+                                        Екатеринбург
+                                    </span>
+                        </div>
+                        <div class="info-container">
+                            <h1 class="hero-header">
+                                Надежные покрытия<br />будущего -
+                                сегодня
+                            </h1>
+                            <div class="orange-circles">
+                                <img loading="lazy"
+                                     src="assets/orange-circles.svg"
+                                     class="circles-img"
+                                     alt="*"
+                                />
+                            </div>
+                            <div class="hero-description-container">
+                                <p class="hero-description">
+                                    Мы увеличим срок эксплуатации
+                                    оборудования и снизим денежные
+                                    затраты на его ремонт
+                                </p>
+                                <button
+                                        class="navigation-button hero-button"
+                                        id="hero-button"
+                                >
+                                            <span
+                                                    class="navigation-button__text"
+                                            >Оставить заявку</span
+                                            >
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="img loading=«lazy»-zone"></div>
+                </div>
+            </div>
+            <div class="wrap">
+                <div class="wrapper-super-el primary">
+                    <div class="wrapper_el">
+                        <a href="#">
+                            <img  loading="lazy" src="assets/company-logo1.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="wrapper_el">
+                        <a href="#">
+                            <img loading="lazy" src="assets/company-logo2.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="wrapper_el">
+                        <a href="#">
+                            <img loading="lazy" src="assets/ual.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="wrapper_el">
+                        <a href="#">
+                            <img loading="lazy" src="assets/um.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="wrapper_el">
+                        <a href="#">
+                            <img loading="lazy" src="assets/atom.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="wrapper_el">
+                        <a href="#">
+                            <img loading="lazy" src="assets/zavod9.svg" alt="" />
+                        </a>
+                    </div>
+                </div>
+                <div class="wrapper-super-el secondary">
+                    <div class="wrapper_el">
+                        <a href="#">
+                            <img loading="lazy" src="assets/company-logo1.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="wrapper_el">
+                        <a href="#">
+                            <img loading="lazy" src="assets/company-logo2.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="wrapper_el">
+                        <a href="#">
+                            <img loading="lazy" src="assets/ual.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="wrapper_el">
+                        <a href="#">
+                            <img loading="lazy" src="assets/um.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="wrapper_el">
+                        <a href="#">
+                            <img loading="lazy" src="assets/atom.svg" alt="" />
+                        </a>
+                    </div>
+                    <div class="wrapper_el">
+                        <a href="#">
+                            <img loading="lazy" src="assets/zavod9.svg" alt="" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="card">
+                <div class="card__header">
+                    <img loading="lazy"
+                         src="assets/point.svg"
+                         alt="point"
+                         class="card__header-point point-extensions"
+                    />
+                    <h1 class="card__header-header">
+                        Наша компания занимается нанесением покрытий
+                        на любые поверхности с использованиваем
+                        технологий термического напыления
+                    </h1>
+                </div>
+                <div class="image-section">
+                    <div>
+                        <img loading="lazy"
+                             src="assets/about_new.png"
+                             class="about-img"
+                         alt="Красивое изображение напыления"/>
+                    </div>
+                    <div>
+                        <img loading="lazy"
+                             src="assets/about_new_2.png"
+                             alt="Термическое напыление"
+                             class="about-img loading=«lazy»"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="methods" id="methods">
+        <div class="container">
+            <div class="card">
+                <div class="card__header">
+                    <img loading="lazy"
+                         src="assets/point.svg"
+                         alt="Точка"
+                         class="card__header-point"
+                    />
+                    <h1 class="card__header-header">
+                        Наши методы нанесения покрытий
+                    </h1>
+                </div>
+                <div class="method-cards-section">
+                    <div class="method-card">
+                        <img loading="lazy"
+                             src="assets/shema1.png"
+                             alt="Схема работы"
+                             class="method-img"
+                        />
+                        <h3 class="method-name">
+                            Плазменное напыление
+                        </h3>
+                        <p class="method-description">
+                            Технологический процесс, при котором
+                            напыляемый материал разогревается до жидкого
+                            состояния и переносится на обрабатываемую
+                            поверхность при помощи потока плазмы с
+                            высокой температурой.
+                        </p>
+                    </div>
+                    <div class="method-card">
+                        <img loading="lazy"
+                             src="assets/shema-2.png"
+                             alt="Схема технологического процесса"
+                             class="method-img"
+                        />
+                        <h3 class="method-name">
+                            Высокоскоростное газопламенное напыление
+                        </h3>
+                        <p class="method-description">
+                            Технологический процесс, при котором
+                            присадочный материал подается к факелу
+                            пламени горелки, плавится, и сжатым воздухом
+                            распыляется на обрабатываемую поверхность,
+                            создавая на ней сплошное низкопористое
+                            металлопокрытие.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="process" id="process">
+        <div class="container">
+            <div class="card">
+                <div class="card__header">
+                    <img loading="lazy"
+                         src="assets/point.svg"
+                         alt="point"
+                         class="card__header-point"
+                    />
+                    <h1 class="card__header-header">
+                        Процесс напыления
+                    </h1>
+                </div>
+                <div class="video-area">
+                    <div class="video-card">
+                        <video
+                                class="video"
+                                src="assets/videos/video_2025-01-11_23-14-18.mp4"
+                                controls
+                                poster="assets/preview1.jpg"
+                        ></video>
+                        <h3 class="video-name">
+                            Процесс плазменного напыления
+                        </h3>
+                    </div>
+                    <div class="video-card">
+                        <video
+                                class="video"
+                                src="assets/videos/video1.mp4"
+                                controls
+                                poster="assets/preview1.jpg"
+                        ></video>
+                        <h3 class="video-name">
+                            Процесс высокоскоростного газопламенного напыления
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services" id="services">
+        <div class="container">
+            <div class="card">
+                <div class="card__header">
+                    <img loading="lazy"
+                         src="assets/point.svg"
+                         alt="point"
+                         class="card__header-point"
+                    />
+                    <h1 class="card__header-header">Виды покрытий</h1>
+                </div>
+                <div class="services-card__content">
+                    <div class="services-card__content-card">
+                        <img loading="lazy"
+                             src="assets/image.png"
+                             class="services-card__content-card__image"
+                         alt="Износостойкое покрытие"
+                        />
+                        <div
+                                class="services-card__content-card__button"
+                        >
+                                    <span
+                                            class="services-card__content-card__button-text"
+                                    >
+                                        Износостойкое
+                                    </span>
+                            <button
+                                    class="services-card__content-card__button-button"
+                                    id="modal-wear-resistant-btn"
+                            >
+                                <img loading="lazy" alt=">" src="assets/chevron-right.png" />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="services-card__content-card">
+                        <img loading="lazy"
+                             src="assets/image2.png"
+                             class="services-card__content-card__image"
+                             alt="Термобарьерное покрытие"
+                        />
+                        <div
+                                class="services-card__content-card__button"
+                        >
+                                    <span
+                                            class="services-card__content-card__button-text"
+                                    >
+                                        Термобарьерное
+                                    </span>
+                            <button
+                                    class="services-card__content-card__button-button"
+                                    id="modal-thermal-barrier-btn"
+                            >
+                                <img alt=">" loading="lazy" src="assets/chevron-right.png" />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="services-card__content-card">
+                        <img loading="lazy"
+                             src="assets/image3.png"
+                             class="services-card__content-card__image"
+                             alt="Антифрикционное покрытие"
+                        />
+                        <div
+                                class="services-card__content-card__button"
+                        >
+                                    <span
+                                            class="services-card__content-card__button-text"
+                                    >
+                                        Антифрикционное
+                                    </span>
+                            <button
+                                    class="services-card__content-card__button-button"
+                                    id="modal-antifriction-btn"
+                            >
+                                <img  loading="lazy" src="assets/chevron-right.png" alt=">" />
+                            </button>
+                        </div>
+                    </div>
+                    <div class="services-card__content-card">
+                        <img loading="lazy"
+                             src="assets/image4.png"
+                             class="services-card__content-card__image"
+                             alt="Жаростойкое покрытие"
+                        />
+                        <div
+                                class="services-card__content-card__button"
+                        >
+                                    <span
+                                            class="services-card__content-card__button-text"
+                                    >
+                                        Жаростойкое
+                                    </span>
+                            <button
+                                    class="services-card__content-card__button-button open-modal-btn"
+                                    id="modal-heat-resistant-btn"
+                            >
+                                <img loading="lazy" src="assets/chevron-right.png"  alt=">"/>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="services-card__content-card">
+                        <img loading="lazy"
+                             src="assets/image5.png"
+                             class="services-card__content-card__image"
+                             alt="Коррозионностойкое покрытие"
+                        />
+                        <div
+                                class="services-card__content-card__button"
+                        >
+                                    <span
+                                            class="services-card__content-card__button-text"
+                                    >
+                                        Коррозионностойкое
+                                    </span>
+                            <button
+                                    class="services-card__content-card__button-button"
+                                    id="modal-corrosion-resistant-btn"
+                            >
+                                <img loading="lazy" src="assets/chevron-right.png" alt=">"/>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="services-card__content-card">
+                        <img loading="lazy"
+                             src="assets/image6.png"
+                             class="services-card__content-card__image"
+                             alt="Электропроводящее"
+                        />
+                        <div
+                                class="services-card__content-card__button"
+                        >
+                                    <span
+                                            class="services-card__content-card__button-text"
+                                    >
+                                        Электропроводящее
+                                    </span>
+                            <button
+                                    class="services-card__content-card__button-button"
+                                    id="modal-electrically-conductive-btn"
+                            >
+                                <img loading="lazy" src="assets/chevron-right.png" alt=">" />
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="description" id="description">
+        <div class="container">
+            <div class="card">
+                <div class="card__header">
+                    <img loading="lazy"
+                         src="assets/point.svg"
+                         alt="Точка"
+                         class="card__header-point"
+                    />
+                    <h1 class="card__header-header">
+                        Почему именно <span>мы</span>?
+                    </h1>
+                </div>
+                <div class="description-card__content">
+                    <div class="desciption-card__content-column">
+                        <div class="description-card__content-card">
+                            <h2
+                                    class="description-card__content-card__header"
+                            >
+                                Качество
+                            </h2>
+                            <p
+                                    class="description-card__content-card__text"
+                            >
+                                Современное оборудование по термическому
+                                напылению и широкая приборная база
+                                методов контроля полученных покрытий
+                                позволяют гаранировать высокое качество
+                                нашей продукции
+                            </p>
+                        </div>
+                        <div class="description-card__content-card">
+                            <h2
+                                    class="description-card__content-card__header"
+                            >
+                                Скорость
+                            </h2>
+                            <p
+                                    class="description-card__content-card__text"
+                            >
+                                Слаженная команда и работа без
+                                посредников обеспечивают быструю
+                                отработку каждого заказа
+                            </p>
+                        </div>
+                    </div>
+                    <div class="desciption-card__content-column">
+                        <div class="description-card__content-card">
+                            <h2
+                                    class="description-card__content-card__header"
+                            >
+                                Команда
+                            </h2>
+                            <p
+                                    class="description-card__content-card__text"
+                            >
+                                Нашими сотрудниками являются
+                                дипломированные специалисты в области
+                                материаловедения, химии твердого тела,
+                                металлургии и инженерии поверхности
+                            </p>
+                        </div>
+                        <span class="circle-image">
+                                    <img loading="lazy"
+                                         src="assets/plasma-image-inherit.jpg"
+                                         class="description-card__content-card__image"
+                                         alt="*"
+                                    />
+                                </span>
+                    </div>
+                    <div class="desciption-card__content-column">
+                        <div class="description-card__content-card">
+                            <h2
+                                    class="description-card__content-card__header"
+                            >
+                                Материалы
+                            </h2>
+                            <p
+                                    class="description-card__content-card__text"
+                            >
+                                Для нанесения покрытий мы используем
+                                материалы только от проверенных
+                                поставщиков
+                            </p>
+                        </div>
+                        <div class="description-card__content-card">
+                            <h2
+                                    class="description-card__content-card__header"
+                            >
+                                Гарантия
+                            </h2>
+                            <p
+                                    class="description-card__content-card__text"
+                            >
+                                На каждое покрытие мы даем паспорт и
+                                гарантийные обязательства
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="statistics-card">
+                <div class="statistics-card__column">
+                    <div class="statistics-card__column-header">
+                        <h2>10+</h2>
+                    </div>
+                    <span class="statistics-card__column-text">
+                                компаний работают с нами
+                            </span>
+                </div>
+                <div class="statistics-card__column">
+                    <div class="statistics-card__column-header">
+                        <h2>600+</h2>
+                    </div>
+                    <span class="statistics-card__column-text">
+                                деталей покрыто
+                            </span>
+                </div>
+                <div class="statistics-card__column">
+                    <div class="statistics-card__column-header">
+                        <h2>35+</h2>
+                    </div>
+                    <span class="statistics-card__column-text">
+                                проектов завершено
+                            </span>
+                </div>
+                <img loading="lazy"
+                     alt="Термальное распыление на металле"
+                     src="assets/thermal spray on a metal.png"
+                     class="statistics-card__image"
+                />
+            </div>
+        </div>
+    </section>
+    <section class="examples" id="examples">
+        <div class="container">
+            <div class="card">
+                <div class="card__header">
+                    <img loading="lazy"
+                         src="assets/point.svg"
+                         alt="Точка"
+                         class="card__header-point examples-point"
+                    />
+                    <h1 class="card__header-header examples-header">
+                        Примеры работ
+                    </h1>
+                    <div class="btt-container">
+                        <button
+                                class="bttn-scroll-prev"
+                                onclick="previousSlide()"
+                        >
+                            <img loading="lazy"
+                                 src="assets/sliderbutton.svg"
+                                 alt="<"
+                                 class="left-button"
+                            />
+                        </button>
+                        <button
+                                class="bttn-scroll-next"
+                                onclick="nextSlide()"
+                        >
+                            <img loading="lazy"
+                                 src="assets/sliderbutton.svg"
+                                 alt=">"
+                                 class="right-button"
+                            />
+                        </button>
+                    </div>
+                </div>
+                <div class="examples-card__content">
+                    <div class="examples-card__content-left">
+                        <div class="slider-container">
+                            <div class="slider-image before">
+                                <img loading="lazy"
+                                     src="assets/before.png"
+                                     alt="Фото до обработки"
+                                     class="before__image"
+                                />
+                            </div>
+                            <div class="slider-image after">
+                                <img loading="lazy"
+                                     src="assets/after.png"
+                                     alt="Фото после обработки"
+                                     class="after__image"
+                                />
+                            </div>
+                            <div class="slider-handle"></div>
+                        </div>
+                        <h3 class="examples-card__content-header">
+                            Износостойкое покрытие
+                        </h3>
+                        <p class="examples-card__content-text">
+                            Нанесение износостойкого, жаростойкого
+                            и термобарьерного композитного покрытия
+                            на фурмы доменных печей для компании «НЛМК»
+                        </p>
+                    </div>
+                    <div class="examples-card__content-right">
+                        <div class="examples-card__content-right__item">
+                            <div class="img loading=«lazy»-cont">
+                                <img loading="lazy"
+                                     src="assets/example1.png"
+                                     alt="Пример Электропроводящее покрытие"
+                                     class="slider-img loading=«lazy»"
+                                />
+                            </div>
+                            <h3 class="examples-card__content-header">
+                                Электропроводящее покрытие
+                            </h3>
+                            <p class="examples-card__content-text">
+                                Нанесение электроповодящего Zn покрытия
+                                на изоляторы для теста на пробой
+                            </p>
+                        </div>
+                        <div class="examples-card__content-right__item">
+                            <div class="img loading=«lazy»-cont">
+                                <img loading="lazy"
+                                     src="assets/example2.png"
+                                     alt="example3"
+                                     class="slider-img loading=«lazy»"
+                                />
+                            </div>
+                            <h3 class="examples-card__content-header">
+                                Антифрикционное покрытие
+                            </h3>
+                            <p class="examples-card__content-text">
+                                Нанесение антифрикционного покрытия на основе бронзы на различные узлы деталей машин
+                            </p>
+                        </div>
+                        <div class="examples-card__content-right__item">
+                            <div class="img ">
+                                <img loading="lazy"
+                                     src="assets/example3.png"
+                                     alt="example4"
+                                     class="slider-img"
+                                />
+                            </div>
+                            <h3 class="examples-card__content-header">
+                                Износостойкое покрытие
+                            </h3>
+                            <p class="examples-card__content-text">
+                                Нанесение износостойкого покрытия на основе оксида хрома под уплотнение
+                            </p>
+                        </div>
+                        <div class="examples-card__content-right__item">
+                            <div class="img loading=«lazy»-cont">
+                                <img loading="lazy"
+                                     src="assets/example4.png"
+                                     alt="example5"
+                                     class="slider-img loading=«lazy»"
+                                />
+                            </div>
+                            <h3 class="examples-card__content-header">
+                                Износостойкое покрытие
+                            </h3>
+                            <p class="examples-card__content-text">
+                                Нанесение износостойкого покрытия на основе твердого сплава
+                            </p>
+                        </div>
+                        <div class="examples-card__content-right__item">
+                            <div class="img loading=«lazy»-cont">
+                                <img loading="lazy"
+                                     src="assets/example5.png"
+                                     alt="example6"
+                                     class="slider-img loading=«lazy»"
+                                />
+                            </div>
+                            <h3 class="examples-card__content-header">
+                                Износостойкое покрытие
+                            </h3>
+                            <p class="examples-card__content-text">
+                                Нанесение износостойкого покрытия на основе твердого сплава
+                            </p>
+                        </div>
+                        <div class="examples-card__content-right__item">
+                            <div class="img loading=«lazy»-cont">
+                                <img loading="lazy"
+                                     src="assets/example6.png"
+                                     alt="example7"
+                                     class="slider-img loading=«lazy»"
+                                />
+                            </div>
+                            <h3 class="examples-card__content-header">
+                                Антифрикционное покрытие
+                            </h3>
+                            <p class="examples-card__content-text">
+                                Нанесение антифрикционного покрытия на основе бронзы на различные узлы деталей машин
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="price" id="price">
+        <div class="container">
+            <div class="card">
+                <div class="card__header">
+                    <img loading="lazy"
+                         src="assets/point.svg"
+                         alt="point"
+                         class="card__header-point"
+                    />
+                    <h1 class="card__header-header">
+                        Как формируется <span>цена</span>?
+                    </h1>
+                </div>
+                <div class="card__text">
+                    Цена зависит от множества факторов:
+                </div>
+                <div class="price-card__content">
+                    <!--<div class="price-image-container">
+                        <img loading=«lazy»
+                            src="assets/price1.png"
+                            class="price-card__content-image"
+                        />
+                    </div>-->
+                    <div class="price-image-container">
+                        <div class="price-card__content-image pr-img loading=«lazy»-1">
+                            <h3 class="price-card-header">
+                                Толщина покрытия
+                            </h3>
+                            <p class="price-card-description">
+                                Толщина покрытия может
+                                варьироваться от 0,3 мм до 3 мм
+                            </p>
+                        </div>
+                    </div>
+                    <div class="price-image-container">
+                        <div class="price-card__content-image pr-img loading=«lazy»-2">
+                            <h3 class="price-card-header">
+                                Площадь поверхности
+                            </h3>
+                            <p class="price-card-description">
+                                Размер детали может достигать до 1700
+                                мм в длину и до 600 мм в диаметре
+                            </p>
+                        </div>
+                    </div>
+                    <div class="price-image-container">
+                        <div class="price-card__content-image pr-img loading=«lazy»-3">
+                            <h3 class="price-card-header">
+                                Геометрия детали
+                            </h3>
+                            <p class="price-card-description">
+                                В зависимости от формы, наличия пазов
+                                и других углублений
+                                внешней или внутренней поверхности под
+                                напыление стоимость может меняться
+                            </p>
+                        </div>
+                    </div>
+                    <div class="price-image-container">
+                        <div class="price-card__content-image pr-img loading=«lazy»-4">
+                            <h3 class="price-card-header">
+                                Вид покрытия
+                            </h3>
+                            <p class="price-card-description">
+                                Исходя из вашей задачи и требований к
+                                покрытию стоимость материалов может
+                                составлять от 1 000 ₽ до 20 000 ₽ за 1 кг
+                            </p>
+                        </div>
+                    </div>
+                    <!--<div class="price-image-container">
+                        <img loading=«lazy»
+                            src="assets/card2.png"
+                            class="price-card__content-image"
+                        />
+                    </div>
+                    <div class="price-image-container">
+                        <img loading=«lazy»
+                            src="assets/card3.png"
+                            class="price-card__content-image"
+                        />
+                    </div>
+                    <div class="price-image-container">
+                        <img loading=«lazy»
+                            src="assets/card4.png"
+                            class="price-card__content-image"
+                        />
+                    </div>-->
+                </div>
+            </div>
+            <div class="form-card" id="form">
+                <img alt="Вид итогового изделия"  loading="lazy" src="assets/bullet.png" class="form-card__image" />
+                <div class="form-card__content">
+                    <div class="form-card__content-header">
+                        <img loading="lazy"
+                             src="assets/point.svg"
+                             alt="point"
+                             class="card__header-point"
+                        />
+                        <h1 class="card__header-header">
+                            Свяжитесь с нами
+                        </h1>
+                    </div>
+                    <div class="form-card__content-form">
+                        <form
+                                class="form-card__content-form__form"
+                                id="contactForm"
+                                action="assets/scripts/mail.php"
+                                method="POST"
+
+                        >
+                            <div
+                                    class="form-card__content-form__form-inputs"
+                            >
+                                <div
+                                        class="form-card__content-form__form-inputs-left"
+                                >
+                                    <div>
+
+                                        <label for="username">
+                                        Имя
+                                        </label>
+
+                                        <input
+                                                required
+                                                id="username"
+                                                name="user_name"
+                                                type="text"
+                                                placeholder="Иван"
+                                                class="form-card__content-form__form-inputs-left__input"
+                                        /></div>
+                                    <div>
+                                        <label for="email">Почта</label>
+                                        <input
+                                                required
+                                                id="email"
+                                                name="user_email"
+                                                type="email"
+                                                placeholder="example@mail.ru"
+                                                class="form-card__content-form__form-inputs-left__input"
+                                        />
+                                    </div>
+                                    <div>
+                                        <label for="phone">
+                                            Телефон
+                                        </label>
+                                        <input
+                                                required
+                                                id="phone"
+                                                name="user_phone"
+                                                type="tel"
+                                                placeholder="+799129129"
+                                                class="form-card__content-form__form-inputs-left__input"
+                                        />
+                                    </div>
+
+                                </div>
+                                <label for="question">Ваш вопрос</label>
+                                <div
+                                        class="form-card__content-form__form-inputs-right"
+                                >
+
+                                            <textarea
+                                                    id="question"
+                                                    name="user_message"
+                                                    class="form-card__content-form__form-inputs-right__input"
+                                                    placeholder="Сколько будет стоить..."
+                                                    required
+                                            ></textarea>
+                                </div>
+                            </div>
+                            <div
+                                    class="form-card__content-form__form-button"
+                            >
+                                <button
+                                        class="form-card__content-form__form-button__button"
+                                        type="submit"
+                                        id="contactForm-button"
+                                >
+                                    Отправить заявку
+                                </button>
+                                <span
+                                        class="form-card__content-form__form-button__text"
+                                >
+                                            Нажимая на кнопку, Вы соглашаетесь
+                                            на обработку персональных данных
+                                        </span>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contacts" id="contacts">
+        <div class="container">
+            <div class="card">
+                <div class="card__header">
+                    <img loading="lazy"
+                         src="assets/point.svg"
+                         alt="point"
+                         class="card__header-point"
+                    />
+                    <h1 class="card__header-header">
+                        Наши <span>контакты</span>
+                    </h1>
+                </div>
+                <div class="contacts-card__info">
+                    <div class="contacts-card__info-item">
+                                <span class="contacts-card__info-item__label"
+                                >Телефон</span
+                                >
+                        <span class="contacts-card__info-item__content"
+                        >+7 (992) 014 38 77</span
+                        >
+                    </div>
+                    <div class="contacts-card__info-item">
+                                <span class="contacts-card__info-item__label"
+                                >Почта</span
+                                >
+                        <span class="contacts-card__info-item__content"
+                        >plasmadynamics@yandex.ru</span
+                        >
+                    </div>
+                    <div class="contacts-card__info-item">
+                                <span class="contacts-card__info-item__label"
+                                >Адрес</span
+                                >
+                        <span class="contacts-card__info-item__content"
+                        >Екатеринбург</span
+                        >
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="map-section">
+        <div class="container">
+            <div class="map">
+                <script
+                        type="text/javascript"
+                        charset="utf-8"
+                        async
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3d64fca7c17b829e1222b9472bea7dd18a99b9facba5802d3c103b2662629a62&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=true"
+                ></script>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="main-footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-content__credentials">
+                <img loading="lazy"
+                     src="assets/footer-logo.png"
+                     alt="footer logo"
+                     class="footer-content__credentials-photo"
+                />
+                <div class="footer-content__credentials-text">
+                            <span
+                            >Проект создан в рамках федерального
+                                проекта</span
+                            >
+                    <span>«Платформа университетского</span>
+                    <span>технологического предпринимательства»</span>
+                </div>
+            </div>
+            <div class="footer-content__info">
+                <div class="footer-content__info-contacts">
+                    <h3 class="footer-content__info-contacts__header">
+                        Контакты
+                    </h3>
+                    <ul class="footer-content__info-contacts__list">
+                        <li>Свердловская область, Екатеринбург</li>
+                        <li>+7 992 014-38-77</li>
+                        <li>plasmadynamics@yandex.ru</li>
+                    </ul>
+                </div>
+                <div class="footer-content__info-nav">
+                    <h2 class="footer-content__info-nav__header">
+                        Карта сайта
+                    </h2>
+                    <nav>
+                        <ul class="footer-content__info-nav-list">
+                            <li>
+                                <a
+                                        class="footer-content__info-nav-link"
+                                        href="#main"
+                                >Главная</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                        class="footer-content__info-nav-link"
+                                        href="#about"
+                                >О нас</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                        class="footer-content__info-nav-link"
+                                        href="#services"
+                                >Услуги</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                        class="footer-content__info-nav-link"
+                                        href="#examples"
+                                >Примеры</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                        class="footer-content__info-nav-link"
+                                        href="#price"
+                                >Стоимость</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                        class="footer-content__info-nav-link"
+                                        href="#contacts"
+                                >Контакты</a
+                                >
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="footer-logo">
+            <h2 class="footer-logo__header">Plasma Dynamics</h2>
+            <div class="footer-logo__text">
+                <span>Товарный знак © 2025 Plasma Dynamics</span>
+                <span>Авторское право сохранено.</span>
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+<script src="assets/scripts/sidebar.js"></script>
+<script src="assets/scripts/mail.js"></script>
+<script src="assets/scripts/scroll.js"></script>
+<!--<script src="assets/scripts/modals.js"></script>-->
+
+<script src="assets/scripts/slider.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="assets/scripts/before-after.js"></script>
+</html>
+
