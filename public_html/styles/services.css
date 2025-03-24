@@ -93,12 +93,6 @@
     }
 }
 
-@media (min-width: 1300px) {
-    .services-card__content-card {
-        width: 540px;
-        height: 340px;
-    }
-}
 
 @media (min-width: 1600px) {
     .services-card__content-card {
