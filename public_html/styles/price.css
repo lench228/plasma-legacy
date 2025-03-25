@@ -479,7 +479,7 @@
 
     .form-card__content-form__form-inputs {
         display: flex;
-        flex-direction: row;
+
         gap: 32px;
     }
 

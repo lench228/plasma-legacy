@@ -9,6 +9,10 @@ url('./assets/fonts/Manrope/Manrope-Bold.ttf') format('ttf');
     font-display: swap;
 }
 
+.hidden{
+    display: none !important;
+}
+
 
 body{
     font-family: 'Manrope',serif;
