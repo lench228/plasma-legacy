@@ -184,7 +184,7 @@
 }
 
 .form-card__content-form__form-button__text {
-    color: #848484;
+    color: #2d2d2d;
     font-size: 14px;
     font-weight: 400;
 }
@@ -193,31 +193,6 @@
     .form-card {
         padding: 16px;
         gap: 16px;
-    }
-
-    .price-card-header {
-        font-family: Montserrat;
-        font-size: 14px;
-        font-weight: 500;
-        line-height: 17px;
-        text-align: left;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
-        color: #FFFFFF;
-        margin-bottom: 12px;
-    }
-
-    .price-card-description {
-        font-family: Inter;
-        font-size: 9px;
-        font-weight: 400;
-        line-height: 12px;
-        text-align: left;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
-        color: #F0F0F0;
-
-
     }
 
     .price-card__content {
@@ -274,7 +249,7 @@
     }
 
     .price-image-container {
-        width: 48%;
+        width: 80%;
     }
 }
 

@@ -1,3 +1,48 @@
+/* Fallback-шрифт с метриками, близкими к Manrope */
+@font-face {
+    font-family: 'Manrope-fallback';
+    src: local('Arial');
+
+}
+
+/* Основное объявление шрифта */
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/Manrope/Manrope-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/Manrope/Manrope-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/Manrope/Manrope-Semibold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../assets/fonts/Manrope/Manrope-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'Manrope', Arial, -apple-system, sans-serif;
+}
+
 html,
 body,
 div,

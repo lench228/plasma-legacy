@@ -53,8 +53,17 @@
     }
 
     .method-card {
-        padding: 16px;
+        padding: 24px;
         flex-direction: column;
+        & picture{
+            align-self: center;
+        }
+
+    }
+    .method-img{
+        width: 296px;
+        height: 139px;
+
     }
 }
 
@@ -64,9 +73,9 @@
     }
 
     .method-card {
-        padding: 16px;
         flex-direction: column;
     }
+
 }
 
 @media (min-width: 1000px) {
@@ -75,7 +84,7 @@
     }
 
     .method-card {
-        padding: 16px;
+        padding: 24px;
     }
 }
 

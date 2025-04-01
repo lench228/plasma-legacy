@@ -1,19 +1,99 @@
-@font-face {
-    font-family: 'Manrope';
-    src: url('./assets/fonts/Manrope/Manrope-Regular.ttf') format('woff2'),
-    url('./assets/fonts/Manrope/Manrope-Medium.ttf') format('ttf'),
-url('./assets/fonts/Manrope/Manrope-SemiBold.ttf') format('ttf'),
-url('./assets/fonts/Manrope/Manrope-Bold.ttf') format('ttf');
-    font-weight: 400 800;
-    font-style: normal;
-    font-display: swap;
+
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-self: center;
+    align-items: center;
 }
+
+@media (max-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 100vw;
+
+    }
+}
+
+@media (min-width: 600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 540px;
+    }
+}
+
+@media (min-width: 1000px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 960px;
+    }
+}
+
+@media (min-width: 1300px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 1200px;
+    }
+}
+
+@media (min-width: 1600px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 1440px;
+    }
+}
+
+@media (min-width: 1800px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        width: 1700px;
+    }
+}
+
+
+
+
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 16px 24px;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    z-index: 100000000;
+    font-size: 24px;
+}
+
+.notification.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    pointer-events: none;
+    cursor: not-allowed;
+}
+
 
 .hidden{
     display: none !important;
-}
-
-
-body{
-    font-family: 'Manrope',serif;
+    opacity: 0;
 }
